@@ -15,6 +15,7 @@ class AlbumsList {
         albums: albums
     );
   }
+
 }
 
 class ModelAlbum {
@@ -47,9 +48,9 @@ class ModelAlbum {
   //   title: json["title"],
   // );
   //
-  // Map<String, dynamic> toMap() => {
-  //   "userId": userId,
-  //   "id": id,
-  //   "title": title,
-  // };
+  Map<String, dynamic> toMap() => {
+    "userId": userId,
+    "id": id,
+    "title": title,
+  };
 }

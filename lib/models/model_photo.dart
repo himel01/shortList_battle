@@ -37,13 +37,13 @@ class ModelPhoto {
   //   thumbnailUrl: json["thumbnailUrl"],
   // );
   //
-  // Map<String, dynamic> toMap() => {
-  //   "albumId": albumId,
-  //   "id": id,
-  //   "title": title,
-  //   "url": url,
-  //   "thumbnailUrl": thumbnailUrl,
-  // };
+  Map<String, dynamic> toMap() => {
+    "albumId": albumId,
+    "id": id,
+    "title": title,
+    "url": url,
+    "thumbnailUrl": thumbnailUrl,
+  };
 }
 class PhotosList {
   final List<ModelPhoto> photos;
