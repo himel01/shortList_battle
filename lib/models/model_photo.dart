@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class ModelPhoto {
   ModelPhoto({
     required this.albumId,
@@ -44,20 +42,4 @@ class ModelPhoto {
     "url": url,
     "thumbnailUrl": thumbnailUrl,
   };
-}
-class PhotosList {
-  final List<ModelPhoto> photos;
-
-  PhotosList({
-    required this.photos,
-  });
-  factory PhotosList.fromJson(List<dynamic> parsedJson) {
-
-    List<ModelPhoto> photos = <ModelPhoto>[];
-    photos = parsedJson.map((i)=>ModelPhoto.fromJson(i)).toList();
-
-    return new PhotosList(
-        photos: photos
-    );
-  }
 }

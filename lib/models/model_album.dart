@@ -1,23 +1,3 @@
-import 'dart:convert';
-class AlbumsList {
-  final List<ModelAlbum> albums;
-
-  AlbumsList({
-    required this.albums,
-  });
-
-  factory AlbumsList.fromJson(List<dynamic> parsedJson) {
-
-    List<ModelAlbum> albums = <ModelAlbum>[];
-    albums = parsedJson.map((i)=>ModelAlbum.fromJson(i)).toList();
-
-    return new AlbumsList(
-        albums: albums
-    );
-  }
-
-}
-
 class ModelAlbum {
   ModelAlbum({
     required this.userId,

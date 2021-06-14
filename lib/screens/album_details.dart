@@ -33,8 +33,6 @@ class _DetailsState extends State<Details> {
           return BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
             child: AlertDialog(
-              //content: Text("Are You Sure Want To Proceed?"),
-
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
                   Radius.circular(20.0),
@@ -49,14 +47,11 @@ class _DetailsState extends State<Details> {
                     child: CarouselSlider.builder(
                       options: CarouselOptions(
                           height: 150.0,
-                          //pageSnapping : false,
                           enlargeStrategy: CenterPageEnlargeStrategy.scale,
-                          //aspectRatio: 16/9,
                           viewportFraction: 0.85,
                           initialPage: 0,
                           enableInfiniteScroll: false,
                           enlargeCenterPage: true,
-                          onPageChanged: (index, reason) {},
                           scrollDirection: Axis.horizontal),
                       itemCount: albumList.length,
                       itemBuilder: (BuildContext context, int itemIndex, r) {
